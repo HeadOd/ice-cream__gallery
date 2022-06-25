@@ -1,0 +1,19 @@
+// img {
+//     display: inline-block;
+// }
+
+.gallery__container {
+    width: 320px;
+    height: 136px;
+
+    margin: 0 auto;
+
+    background-image: linear-gradient(to bottom,
+        $secondaryBackground 30px,
+        $contrastTextColor 30px);
+}
+
+.gallery__list {
+    display: grid;
+
+}
