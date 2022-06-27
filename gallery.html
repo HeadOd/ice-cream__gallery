@@ -16,278 +16,63 @@
 <body>
     <section class="gallery">
         <div class="gallery__container">
-            <ul class="gallery__list">
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_1_desk.webp 1x,
-                                images/gallery/gallery_pic_1_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_1_desk.jpg 1x,
-                                images/gallery/gallery_pic_1_desk@2x.jpg 2x" type="image/jpg">
+                <ul class="gallery__list">
+                        <li class="gallery__item">
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_1_desk.jpg 1x,
+                                                images/gallery/gallery_pic_1_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_1_desk.jpg" alt="matcha ice cream" loading="lazy" />
+                        </li>
+                        <li class="gallery__item gallery__item--down">
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_2_desk.jpg 1x,
+                                                images/gallery/gallery_pic_2_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_2_desk.jpg" alt="ice cream balls" loading="lazy" />
 
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_1_tab.webp 1x,
-                                images/gallery/gallery_pic_1_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_1_tab.jpg 1x,
-                                images/gallery/gallery_pic_1_tab@2x.jpg 2x" type="image/jpg">
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_3_desk.jpg 1x,
+                                                images/gallery/gallery_pic_3_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_3_desk.jpg" alt="fruit ice" loading="lazy" />
+                        </li>
+                        <li class="gallery__item gallery__item--2x">
+                                <img class="gallery__img gallery__img--2x" 
+                                        srcset="./images/gallery/gallery_pic_4_desk.jpg 1x,
+                                                images/gallery/gallery_pic_4_desk@2x.jpg 2x" 
+                                        src="./images/gallery/gallery_pic_4_desk.jpg" alt="fruit ice cream" loading="lazy"/>
 
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_1_mob.webp 1x,
-                                images/gallery/gallery_pic_1_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_1_mob.jpg 1x,
-                                images/gallery/gallery_pic_1_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_1_mob.jpg" 
-                        width="44" height="44" alt="matcha ice cream" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_2_desk.webp 1x,
-                                images/gallery/gallery_pic_2_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_2_desk.jpg 1x,
-                                images/gallery/gallery_pic_2_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_2_tab.webp 1x,
-                                images/gallery/gallery_pic_2_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_2_tab.jpg 1x,
-                                images/gallery/gallery_pic_2_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_2_mob.webp 1x,
-                                images/gallery/gallery_pic_2_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_2_mob.jpg 1x,
-                                images/gallery/gallery_pic_2_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_2_mob.jpg" 
-                        width="44" height="44" alt="ice cream balls" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery__picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_3_desk.webp 1x,
-                                images/gallery/gallery_pic_3_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_3_desk.jpg 1x,
-                                images/gallery/gallery_pic_3_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_3_tab.webp 1x,
-                                images/gallery/gallery_pic_3_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_3_tab.jpg 1x,
-                                images/gallery/gallery_pic_3_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_3_mob.webp 1x,
-                                images/gallery/gallery_pic_3_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_3_mob.jpg 1x,
-                                images/gallery/gallery_pic_3_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_3_mob.jpg" 
-                        width="44" height="44" alt="fruit ice" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_4_desk.webp 1x,
-                                images/gallery/gallery_pic_4_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_4_desk.jpg 1x,
-                                images/gallery/gallery_pic_4_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_4_tab.webp 1x,
-                                images/gallery/gallery_pic_4_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_4_tab.jpg 1x,
-                                images/gallery/gallery_pic_4_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_4_mob.webp 1x,
-                                images/gallery/gallery_pic_4_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_4_mob.jpg 1x,
-                                images/gallery/gallery_pic_4_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_4_mob.jpg" 
-                        width="89" height="90" alt="fruit ice cream" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_5_desk.webp 1x,
-                                images/gallery/gallery_pic_5_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_5_desk.jpg 1x,
-                                images/gallery/gallery_pic_5_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_5_tab.webp 1x,
-                                images/gallery/gallery_pic_5_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_5_tab.jpg 1x,
-                                images/gallery/gallery_pic_5_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_5_mob.webp 1x,
-                                images/gallery/gallery_pic_5_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_5_mob.jpg 1x,
-                                images/gallery/gallery_pic_5_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_5_mob.jpg" 
-                        width="44" height="44" alt="ice cream" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_6_desk.webp 1x,
-                                images/gallery/gallery_pic_6_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_6_desk.jpg 1x,
-                                images/gallery/gallery_pic_6_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_6_tab.webp 1x,
-                                images/gallery/gallery_pic_6_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_6_tab.jpg 1x,
-                                images/gallery/gallery_pic_6_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_6_mob.webp 1x,
-                                images/gallery/gallery_pic_6_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_6_mob.jpg 1x,
-                                images/gallery/gallery_pic_6_mob@2x.jpg 2x" type="image/jpg">
-                                
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_6_mob.jpg" 
-                        width="44" height="44" alt="desserts" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_7_desk.webp 1x,
-                                images/gallery/gallery_pic_7_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_7_desk.jpg 1x,
-                                images/gallery/gallery_pic_7_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_7_tab.webp 1x,
-                                images/gallery/gallery_pic_7_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_7_tab.jpg 1x,
-                                images/gallery/gallery_pic_7_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_7_mob.webp 1x,
-                                images/gallery/gallery_pic_7_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_7_mob.jpg 1x,
-                                images/gallery/gallery_pic_7_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_7_mob.jpg" 
-                        width="44" height="44" alt="ice cream with toppings" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_8_desk.webp 1x,
-                                images/gallery/gallery_pic_8_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_8_desk.jpg 1x,
-                                images/gallery/gallery_pic_8_desk@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_8_tab.webp 1x,
-                                images/gallery/gallery_pic_8_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_8_tab.jpg 1x,
-                                images/gallery/gallery_pic_8_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_8_mob.webp 1x,
-                                images/gallery/gallery_pic_8_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_8_mob.jpg 1x,
-                                images/gallery/gallery_pic_8_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_8_mob.jpg" 
-                        width="44" height="44" alt="natural ice cream" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_9_desk.webp 1x,
-                                images/gallery/gallery_pic_9_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_9_desk.jpg 1x,
-                                images/gallery/gallery_pic_9_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_9_tab.webp 1x,
-                                images/gallery/gallery_pic_9_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_9_tab.jpg 1x,
-                                images/gallery/gallery_pic_9_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_9_mob.webp 1x,
-                                images/gallery/gallery_pic_9_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_9_mob.jpg 1x,
-                                images/gallery/gallery_pic_9_mob@2x.jpg 2x" type="image/jpg">
-
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_9_mob.jpg" 
-                        width="44" height="44" alt="cold drinks" loading="lazy">
-                    </picture>
-                </li>
-                <li class="gallery__item">
-                    <picture class="gallery_picture">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_10_desk.webp 1x,
-                                images/gallery/gallery_pic_10_desk@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 1200px)" 
-                        srcset="./images/gallery/gallery_pic_10_desk.jpg 1x,
-                                images/gallery/gallery_pic_10_desk@2x.jpg 2x" type="image/jpg">
-                        
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_10_tab.webp 1x,
-                                images/gallery/gallery_pic_10_tab@2x.webp 2x" type="image/webp">
-                        <source media="(min-width: 768px)" 
-                        srcset="./images/gallery/gallery_pic_10_tab.jpg 1x,
-                                images/gallery/gallery_pic_10_tab@2x.jpg 2x" type="image/jpg">
-
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_10_mob.webp 1x,
-                                images/gallery/gallery_pic_10_mob@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" 
-                        srcset="./images/gallery/gallery_pic_10_mob.jpg 1x,
-                                images/gallery/gallery_pic_10_mob@2x.jpg 2x" type="image/jpg">
-                        <img class="gallery__img" src="./images/gallery/gallery_pic_10_mob.jpg" 
-                        width="44" height="44" alt="delicious desserts" loading="lazy">
-                    </picture>
-                </li>
-            </ul>
+                                <img class="gallery__img gallery__img--2x" 
+                                        srcset="./images/gallery/gallery_pic_5_desk.jpg 1x,
+                                                images/gallery/gallery_pic_5_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_5_desk.jpg" alt="ice cream" loading="lazy" />
+                        </li>
+                        <li class="gallery__item gallery__item--down">
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_6_desk.jpg 1x,
+                                                images/gallery/gallery_pic_6_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_6_desk.jpg" alt="desserts" loading="lazy" />
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_7_desk.jpg 1x,
+                                                images/gallery/gallery_pic_7_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_7_desk.jpg" alt="ice cream with toppings" loading="lazy" />
+                        </li>
+                        <li class="gallery__item">
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_8_desk.jpg 1x,
+                                                images/gallery/gallery_pic_8_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_8_desk.jpg" alt="natural ice cream" loading="lazy" />
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_9_desk.jpg 1x,
+                                                images/gallery/gallery_pic_9_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_9_desk.jpg" alt="cold drinks" loading="lazy" />
+                        </li>
+                        <li class="gallery__item">
+                                <img class="gallery__img" 
+                                        srcset="./images/gallery/gallery_pic_10_desk.jpg 1x,
+                                                images/gallery/gallery_pic_10_desk@2x.jpg 2x"
+                                        src="./images/gallery/gallery_pic_10_desk.jpg" alt="delicious desserts" loading="lazy" />
+                        </li>
+                </ul>
         </div>
-    </section>
+</section>
 </body>
 </html>

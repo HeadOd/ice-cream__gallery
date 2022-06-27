@@ -1,224 +1,45 @@
-.gallery__container {
-    margin: 0 auto;
-
+.gallery {
     @include ice(mobile-only) {
-        width: 320px;
-        height: 136px;
-    
-        background-image: linear-gradient(to bottom,
-                    $secondaryBackground 30px,
-                    $contrastTextColor 30px);
-    }
-
-    @include ice(tablet-only) {
-        width: 768px;
-        height: 326px;
+        max-width: 767px;
 
         background-image: linear-gradient(to bottom,
-                    $secondaryBackground 186px,
-                    $contrastTextColor 186px);
-    }
-
-    @include ice(desktop) {
-        width: 1200px;
-        height: 430px;
-        padding-right: 94px;
-        padding-left: 93px;
-
-        background-image: linear-gradient(to bottom,
-                    $secondaryBackground 85px,
-                    $contrastTextColor 85px);
-    }
+                    $secondaryBackground 20%,
+                    $contrastTextColor 20%);
+        }
 }
 
 .gallery__list {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .gallery__item {
-    position: absolute;
+    float: left;
+    width: 14%;
 
-    @include ice(tablet-only) {
-        width: 105px;
-        height: 105px;
-    }
+    &:not(:last-child) {
+            margin-right: 0.8%;
+        }
+}
 
-    @include ice(desktop) {
-        width: 138px;
-        height: 139px;
-    }
+.gallery__item--2x {
+    width: 28%;
+}
 
-    &:nth-child(1) {
-        left: 0;
+.gallery__img--2x:last-child {
+    width: 50%;
+}
 
-        @include ice(mobile-only) {
-            top: 44px;
-        }
+.gallery__item--down {
+    padding-top: 5%;
+}
 
-        @include ice(tablet-only) {
-            top: 110px;
-        }
-
-        @include ice(desktop) {
-            top: 138px;
-        }
-    }
-    
-    &:nth-child(2) {
-        @include ice(mobile-only) {
-            top: 32px;
-            left: 46px;
-        }
-        @include ice(tablet-only) {
-            top: 55px;
-            left: 111px;
-        }
-
-        @include ice(desktop) {
-            top: 85px;
-            left: 147px;
-        }
-    }
-
-    &:nth-child(3) {
-        @include ice(mobile-only) {
-            top: 78px;
-            left: 46px;
-        }
-        @include ice(tablet-only) {
-            top: 166px;
-            left: 111px;
-        }
-        @include ice(desktop) {
-            top: 231px;
-            left: 147px;
-        }
-    }
-
-    &:nth-child(4){
-        top: 0;
-
-        @include ice(mobile-only) {
-            left: 92px;
-        }
-
-        @include ice(tablet-only) {
-            width: 215px;
-            height: 215px;
-
-            left: 222px;
-        }
-
-        @include ice(desktop) {
-            width: 283px;
-            height: 283px;
-
-            left: 294px;
-        }
-    }
-
-    &:nth-child(5) {
-        @include ice(mobile-only) {
-            top: 92px;
-            left: 92px;
-        }
-        @include ice(tablet-only) {
-            top: 221px;
-            left: 222px;
-        }
-
-        @include ice(desktop) {
-            top: 291px;
-            left: 294px;
-        }
-    }
-
-    &:nth-child(6) {
-        @include ice(mobile-only) {
-            top: 34px;
-            left: 184px;
-        }
-        @include ice(tablet-only) {
-            top: 75px;
-            left: 443px;
-        }
-
-        @include ice(desktop) {
-            top: 100px;
-            left: 585px;
-        }
-    }
-
-    &:nth-child(7) {
-        @include ice(mobile-only) {
-            top: 85px;
-            left: 184px;
-        }
-        @include ice(tablet-only) {
-            top: 186px;
-            left: 443px;
-        }
-
-        @include ice(desktop) {
-            top: 246px;
-            left: 585px;
-        }
-    }
-
-    &:nth-child(8) {
-        @include ice(mobile-only) {
-            top: 21px;
-            left: 230px;
-        }
-        @include ice(tablet-only) {
-            top: 50px;
-            left: 554px;
-        }
-
-        @include ice(desktop) {
-            top: 65px;
-            left: 731px;
-        }
-    }
-
-    &:nth-child(9) {
-        @include ice(mobile-only) {
-            top: 67px;
-            left: 230px;
-        }
-        @include ice(tablet-only) {
-            top: 161px;
-            left: 554px;
-        }
-
-        @include ice(desktop) {
-            top: 211px;
-            left: 731px;
-        }
-    }
-
-    &:nth-child(10) {
-        right: 0;
-
-        @include ice(mobile-only) {
-            top: 47px; 
-        }
-        @include ice(tablet-only) {
-            top: 115px;
-        }
-
-        @include ice(desktop) {
-            top: 150px;
-        }
-    }
+img + img {
+    margin-top: 4%;
 }
 
 .gallery__img {
-    border-radius: 8px;
-
-    @include ice(tablet) {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
-    }
+    border-radius: 8%;
 }
