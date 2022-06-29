@@ -165,6 +165,12 @@ img + img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.a-backdrop.is-hidden__about {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .a-modal {
   position: absolute;
   top: 50%;
