@@ -154,4 +154,115 @@ img + img {
 .gallery__img {
   border-radius: 8%;
 }
+
+.a-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.a-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: scroll;
+  width: 80vw;
+  height: 80vh;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.a-modal__btn {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: transparent;
+  fill: #D41443;
+}
+
+.a-modal__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.a-modal__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .a-modal__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.a-modal__img {
+  border-radius: 8%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .a-modal__img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .a-modal__img {
+    width: 113px;
+    height: 113px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .a-modal__img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.a-modal__title {
+  font-size: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.a-modal__title::after {
+  content: '';
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #FFB8CA;
+}
+
+@media screen and (min-width: 768px) {
+  .a-modal__title::after {
+    width: 150px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
