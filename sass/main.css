@@ -133,6 +133,19 @@ img {
   }
 }
 
+.gallery__img {
+  border-radius: 14%;
+  -webkit-transition: -webkit-transform 300ms linear;
+  transition: -webkit-transform 300ms linear;
+  transition: transform 300ms linear;
+  transition: transform 300ms linear, -webkit-transform 300ms linear;
+}
+
+.gallery__img:hover, .gallery__img:focus {
+  -webkit-transform: scale(130%);
+          transform: scale(130%);
+}
+
 @media screen and (max-width: 1199.98px) {
   .gallery__img--2x:last-child {
     width: 50%;
@@ -149,10 +162,6 @@ img {
 
 img + img {
   margin-top: 3%;
-}
-
-.gallery__img {
-  border-radius: 8%;
 }
 
 .a-backdrop {

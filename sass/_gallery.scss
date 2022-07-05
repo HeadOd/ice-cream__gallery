@@ -55,6 +55,15 @@
     }
 }
 
+.gallery__img {
+    border-radius: 14%;
+    transition: transform 300ms linear;
+
+    &:hover, &:focus {
+        transform: scale(130%);
+    }
+}
+
 .gallery__img--2x:last-child {
     @include ice(not-desktop) {
         width: 50%;
@@ -72,7 +81,3 @@
 img + img {
     margin-top: 3%;
 } 
-
-.gallery__img {
-    border-radius: 8%;
-}
