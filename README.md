@@ -1,1 +1,1 @@
-# ice-cream__gallery
+Part of a group project
